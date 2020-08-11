@@ -9,8 +9,33 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Tue, 11 Aug 2020 09:10:08 GMT</pubDate>
+    <pubDate>Tue, 11 Aug 2020 12:49:51 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>插入图片</title>
+      <link>http://yoursite.com/2020/08/11/new/</link>
+      <guid>http://yoursite.com/2020/08/11/new/</guid>
+      <pubDate>Tue, 11 Aug 2020 12:40:46 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;#图片&lt;br&gt;！&lt;a href=&quot;https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg&quot;&gt;我的照片–lena&lt;/a&gt;&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>#图片<br>！<a href="https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg">我的照片–lena</a></p>]]></content:encoded>
+      
+      
+      
+      <category domain="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/">测试</category>
+      
+      
+      <comments>http://yoursite.com/2020/08/11/new/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>(≧∇≦)/</title>
