@@ -9,7 +9,7 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Tue, 11 Aug 2020 08:53:36 GMT</pubDate>
+    <pubDate>Tue, 11 Aug 2020 08:55:33 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -18,7 +18,15 @@
       <guid>http://yoursite.com/2020/08/11/test01/</guid>
       <pubDate>Tue, 11 Aug 2020 07:01:07 GMT</pubDate>
       
+        
+        
+      <description>&lt;p&gt;testing&lt;/p&gt;
+</description>
+        
       
+      
+      
+      <content:encoded><![CDATA[<p>testing</p>]]></content:encoded>
       
       
       
