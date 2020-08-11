@@ -9,7 +9,7 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Tue, 11 Aug 2020 12:52:18 GMT</pubDate>
+    <pubDate>Tue, 11 Aug 2020 12:53:58 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -20,12 +20,12 @@
       
         
         
-      <description>&lt;p&gt;#图片&lt;br&gt;![我的照片–lena] (&lt;a href=&quot;https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg&quot;&gt;https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg&lt;/a&gt;)&lt;/</description>
+      <description>&lt;h1 id=&quot;图片&quot;&gt;&lt;a href=&quot;#图片&quot; class=&quot;headerlink&quot; title=&quot;图片&quot;&gt;&lt;/a&gt;图片&lt;/h1&gt;&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg&quot; alt=&quot;我的照片</description>
         
       
       
       
-      <content:encoded><![CDATA[<p>#图片<br>![我的照片–lena] (<a href="https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg">https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg</a>)</p>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h1><p><img src="https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg" alt="我的照片--lena"></p>]]></content:encoded>
       
       
       
