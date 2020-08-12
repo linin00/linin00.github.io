@@ -9,7 +9,7 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Tue, 11 Aug 2020 14:19:52 GMT</pubDate>
+    <pubDate>Wed, 12 Aug 2020 17:17:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -28,6 +28,8 @@
       
       <content:encoded><![CDATA[<h1 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h1><p>Hexo 有多种图片插入方式，可将图片放在本地或CDN引用</p><h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![我的照片](https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg)</span><br></pre></td></tr></table></figure><h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>没有空格，重音符```<br>这种方法无法自定义图片样式<br>例<br><img src="https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg" alt="我的照片"></p><h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>（待续）</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure><h1 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h1><p>（B站紫颜小姐姐）</p><h2 id="方法一-1"><a href="#方法一-1" class="headerlink" title="方法一"></a>方法一</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=<span class="string">&quot;视频网址&quot;</span> scrolling=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> frameborder=<span class="string">&quot;no&quot;</span> framespacing=<span class="string">&quot;0&quot;</span> allowfullscreen=<span class="string">&quot;true&quot;</span> width=<span class="string">&quot;100%&quot;</span>  height=<span class="string">&quot;580&quot;</span> quality=<span class="string">&quot;high&quot;</span> &gt; &lt;/iframe&gt;</span><br></pre></td></tr></table></figure><iframe src="https://www.bilibili.com/video/BV1Cf4y117F1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="100%"  height="580" quality="high" > </iframe><p>但是手机端不能自适应，你以为这就完了？</p><h2 id="方法二-1"><a href="#方法二-1" class="headerlink" title="方法二"></a>方法二</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=<span class="string">&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;</span>&gt;&lt;iframe </span><br><span class="line">src=<span class="string">&quot;视频地址&quot;</span> scrolling=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> </span><br><span class="line">frameborder=<span class="string">&quot;no&quot;</span> framespacing=<span class="string">&quot;0&quot;</span> allowfullscreen=<span class="string">&quot;true&quot;</span> style=<span class="string">&quot;position: absolute; width: 100%; </span></span><br><span class="line"><span class="string">height: 100%; left: 0; top: 0;&quot;</span>&gt; &lt;/iframe&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://www.bilibili.com/video/BV1rQ4y1N7Xv" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>]]></content:encoded>
       
+      
+      <category domain="http://yoursite.com/categories/hexo/">hexo</category>
       
       
       <category domain="http://yoursite.com/tags/hexo/">hexo</category>
@@ -53,6 +55,8 @@
       
       <content:encoded><![CDATA[<p>啦啦啦，我的个人博客诞生了！🤣🤣🤣🤣🤣（还不太会写）</p>]]></content:encoded>
       
+      
+      <category domain="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/">日常</category>
       
       
       <category domain="http://yoursite.com/tags/%E6%97%A5%E5%B8%B8/">日常</category>
