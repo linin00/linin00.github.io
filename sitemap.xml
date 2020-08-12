@@ -53,7 +53,7 @@
 
   <url>
     <loc>http://yoursite.com/</loc>
-    <lastmod>2020-08-11</lastmod>
+    <lastmod>2020-08-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -61,14 +61,14 @@
   
   <url>
     <loc>http://yoursite.com/tags/hexo/</loc>
-    <lastmod>2020-08-11</lastmod>
+    <lastmod>2020-08-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite.com/tags/%E6%97%A5%E5%B8%B8/</loc>
-    <lastmod>2020-08-11</lastmod>
+    <lastmod>2020-08-12</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
