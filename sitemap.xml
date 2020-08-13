@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/08/11/%E5%9C%A8hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
+    
+    <lastmod>2020-08-13</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/08/13/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/</loc>
+    
+    <lastmod>2020-08-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/08/13/%E8%A7%86%E9%A2%91%E9%93%BE%E6%8E%A51/</loc>
     
     <lastmod>2020-08-13</lastmod>
@@ -10,13 +24,6 @@
   
   <url>
     <loc>http://yoursite.com/2020/08/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</loc>
-    
-    <lastmod>2020-08-13</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/08/13/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/</loc>
     
     <lastmod>2020-08-13</lastmod>
     
@@ -38,13 +45,6 @@
   
   <url>
     <loc>http://yoursite.com/2020/08/13/web%E5%BC%80%E5%8F%91%E8%B5%B7%E6%AD%A5/</loc>
-    
-    <lastmod>2020-08-12</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2020/08/11/%E5%9C%A8hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
     
     <lastmod>2020-08-12</lastmod>
     
@@ -109,14 +109,14 @@
 
   
   <url>
-    <loc>http://yoursite.com/tags/%E6%97%A5%E5%B8%B8/</loc>
+    <loc>http://yoursite.com/tags/hexo/</loc>
     <lastmod>2020-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/hexo/</loc>
+    <loc>http://yoursite.com/tags/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2020-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -146,14 +146,14 @@
 
   
   <url>
-    <loc>http://yoursite.com/categories/%E6%88%91/</loc>
+    <loc>http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2020-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <loc>http://yoursite.com/categories/%E6%88%91/</loc>
     <lastmod>2020-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -167,14 +167,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/hexo/</loc>
+    <loc>http://yoursite.com/categories/%E9%93%BE%E6%8E%A5/</loc>
     <lastmod>2020-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/%E9%93%BE%E6%8E%A5/</loc>
+    <loc>http://yoursite.com/categories/hexo/</loc>
     <lastmod>2020-08-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
