@@ -9,8 +9,109 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Thu, 13 Aug 2020 08:19:01 GMT</pubDate>
+    <pubDate>Thu, 13 Aug 2020 10:57:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>前端基础入门</title>
+      <link>http://yoursite.com/2020/08/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</link>
+      <guid>http://yoursite.com/2020/08/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</guid>
+      <pubDate>Thu, 13 Aug 2020 10:37:23 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h3 id=&quot;前端&quot;&gt;&lt;a href=&quot;#前端&quot; class=&quot;headerlink&quot; title=&quot;前端&quot;&gt;&lt;/a&gt;&lt;a href=&quot;https://baike.baidu.com/item/%E5%89%8D%E7%AB%AF/5956545&quot;&gt;前端&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a><a href="https://baike.baidu.com/item/%E5%89%8D%E7%AB%AF/5956545">前端</a></h3><p>前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。随着互联网技术的发展，HTML5，CSS3，前端框架的应用，跨平台响应式网页设计能够适应各种屏幕分辨率，合适的动效设计，给用户带来极高的用户体验。–《百度百科》</p><h5 id="下面是B站上号称小白看一遍就会的前端基础入门视频"><a href="#下面是B站上号称小白看一遍就会的前端基础入门视频" class="headerlink" title="下面是B站上号称小白看一遍就会的前端基础入门视频"></a>下面是B站上号称<a href="https://www.bilibili.com/video/BV1pE411q7FU/?p=223">小白看一遍就会的前端基础入门</a>视频</h5><div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="https://www.bilibili.com/video/BV1pE411q7FU/?p=223" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>2020-08-13<p>加油，奥利给！<font color=#f7b1bb size=12>ｸﾞｯ!(๑•̀ㅂ•́)و✧</font></p>]]></content:encoded>
+      
+      
+      <category domain="http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/">前端</category>
+      
+      
+      <category domain="http://yoursite.com/tags/%E5%9F%BA%E7%A1%80/">基础</category>
+      
+      
+      <comments>http://yoursite.com/2020/08/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>ｸﾞｯ!(๑•̀ㅂ•́)و✧</title>
+      <link>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</link>
+      <guid>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</guid>
+      <pubDate>Thu, 13 Aug 2020 10:32:21 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;img src=&quot;https://i.loli.net/2020/08/13/jwFupG2TKYWb3PQ.jpg&quot;&gt;&lt;/p&gt;
+</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><img src="https://i.loli.net/2020/08/13/jwFupG2TKYWb3PQ.jpg"></p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>常用链接</title>
+      <link>http://yoursite.com/2020/08/13/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/</link>
+      <guid>http://yoursite.com/2020/08/13/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/</guid>
+      <pubDate>Thu, 13 Aug 2020 10:27:12 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;a href=&quot;https://hexo.io/zh-cn/docs/index.html&quot;&gt;hexo官方文档&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://developers.weixin.qq.com/miniprogram/dev/reference/confi</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><a href="https://hexo.io/zh-cn/docs/index.html">hexo官方文档</a><br><a href="https://developers.weixin.qq.com/miniprogram/dev/reference/configuration/sitemap.html">微信小程序官方文档</a><br><a href="https://markdown-zh.readthedocs.io/en/latest/">Markdown中文文档</a><br><a href="https://blog.csdn.net/u011419965/article/details/50536937">Markdown-语法-示例-字体-颜色</a><br><a href="https://sm.ms/">图床</a></p>]]></content:encoded>
+      
+      
+      <category domain="http://yoursite.com/categories/%E9%93%BE%E6%8E%A5/">链接</category>
+      
+      
+      <category domain="http://yoursite.com/tags/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/">常用链接</category>
+      
+      
+      <comments>http://yoursite.com/2020/08/13/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>视频链接1</title>
+      <link>http://yoursite.com/2020/08/13/%E8%A7%86%E9%A2%91%E9%93%BE%E6%8E%A51/</link>
+      <guid>http://yoursite.com/2020/08/13/%E8%A7%86%E9%A2%91%E9%93%BE%E6%8E%A51/</guid>
+      <pubDate>Thu, 13 Aug 2020 10:11:25 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h3 id=&quot;基础知识入门&quot;&gt;&lt;a href=&quot;#基础知识入门&quot; class=&quot;headerlink&quot; title=&quot;基础知识入门&quot;&gt;&lt;/a&gt;基础知识入门&lt;/h3&gt;&lt;p&gt;&lt;a href=&quot;https://www.bilibili.com/video/BV1pE411q7FU/?</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h3 id="基础知识入门"><a href="#基础知识入门" class="headerlink" title="基础知识入门"></a>基础知识入门</h3><p><a href="https://www.bilibili.com/video/BV1pE411q7FU/?p=223">小白看一遍就会的前端基础入门</a><br><a href="https://www.bilibili.com/video/BV1ux411d75J/">JavaScript开发必会基础</a><br><a href="https://www.bilibili.com/video/BV1k4411w7sV/">JavaScript核心 DOM BOM操作</a><br><a href="https://www.bilibili.com/video/BV1pt411H7D6/">4天玩转jQuery入门</a><br><a href="https://www.bilibili.com/video/BV12J411m7MG/?p=31">快速入门vue.js</a><br><a href="https://www.bilibili.com/video/BV1nE41117BQ/">爆款微信小程序</a></p><h3 id="前端实战项目"><a href="#前端实战项目" class="headerlink" title="前端实战项目"></a>前端实战项目</h3><p><a href="https://www.bilibili.com/video/BV1nW411Z7kT/">乐淘移动商城</a><br><a href="https://www.bilibili.com/video/BV1nx411E7Rh/">百度外卖</a></p><h3 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h3><p><a href="https://www.bilibili.com/video/BV1nE41117BQ">零基础玩转微信小程序</a></p>]]></content:encoded>
+      
+      
+      <category domain="http://yoursite.com/categories/%E9%93%BE%E6%8E%A5/">链接</category>
+      
+      
+      <category domain="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0%E8%A7%86%E9%A2%91%E9%93%BE%E6%8E%A5/">学习视频链接</category>
+      
+      
+      <comments>http://yoursite.com/2020/08/13/%E8%A7%86%E9%A2%91%E9%93%BE%E6%8E%A51/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>准备返校 ✧*｡٩(ˊωˋ*)و✧*｡</title>
@@ -25,7 +126,7 @@
       
       
       
-      <content:encoded><![CDATA[<h1 id="上了一学期嘉立顿大学，终于可以回学校了-╥ω╥-（流下老母亲的泪水-jpg）"><a href="#上了一学期嘉立顿大学，终于可以回学校了-╥ω╥-（流下老母亲的泪水-jpg）" class="headerlink" title="上了一学期嘉立顿大学，终于可以回学校了 (╥ω╥`)  （流下老母亲的泪水.jpg）"></a>上了一学期嘉立顿大学，终于可以回学校了 (╥ω╥`)  （流下老母亲的泪水.jpg）</h1><p><img src="https://i.loli.net/2020/08/13/tlLvn9XxaiNKjuf.png" alt="回校注意事项"><br>（悄咪咪）“随申码”是个啥玩意？？？？？<br>不过麻烦事还是超级多，两门线下考，不过过了这一阵子，又可以过上没羞没臊的奋斗生活了</p><h2 id="一个软件工程的学子！୧-⁼̴̶̤̀ω⁼̴̶̤́-૭"><a href="#一个软件工程的学子！୧-⁼̴̶̤̀ω⁼̴̶̤́-૭" class="headerlink" title="一个软件工程的学子！୧( ⁼̴̶̤̀ω⁼̴̶̤́ )૭"></a>一个软件工程的学子！୧( ⁼̴̶̤̀ω⁼̴̶̤́ )૭</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> 　  ∧_∧::</span><br><span class="line"> 　 (´･ω･`)::</span><br><span class="line">  /⌒　　⌒)::</span><br><span class="line"> /へ_＿  / /::</span><br><span class="line">(＿＼＼  ﾐ)/::</span><br><span class="line">　 ｜ `-イ::</span><br><span class="line">　 /ｙ　 )::</span><br><span class="line">　/／  ／::</span><br><span class="line">／　／::</span><br><span class="line">(　く:::</span><br><span class="line">|＼ ヽ:::</span><br></pre></td></tr></table></figure>]]></content:encoded>
+      <content:encoded><![CDATA[<h1 id="上了一学期嘉立顿大学，终于可以回学校了-╥ω╥-（流下老母亲的泪水-jpg）"><a href="#上了一学期嘉立顿大学，终于可以回学校了-╥ω╥-（流下老母亲的泪水-jpg）" class="headerlink" title="上了一学期嘉立顿大学，终于可以回学校了 (╥ω╥`)  （流下老母亲的泪水.jpg）"></a>上了一学期嘉立顿大学，终于可以回学校了 (╥ω╥`)  （流下老母亲的泪水.jpg）</h1><p><img src="https://i.loli.net/2020/08/13/tlLvn9XxaiNKjuf.png" alt="回校注意事项"><br>（悄咪咪）“随申码”是个啥玩意？？？？？（ps:刚刚知道了<br>不过麻烦事还是超级多，两门线下考，不过过了这一阵子，又可以过上没羞没臊的奋斗生活了</p><h2 id="一个软件工程的学子！୧-⁼̴̶̤̀ω⁼̴̶̤́-૭"><a href="#一个软件工程的学子！୧-⁼̴̶̤̀ω⁼̴̶̤́-૭" class="headerlink" title="一个软件工程的学子！୧( ⁼̴̶̤̀ω⁼̴̶̤́ )૭"></a>一个软件工程的学子！୧( ⁼̴̶̤̀ω⁼̴̶̤́ )૭</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> 　  ∧_∧::</span><br><span class="line"> 　 (´･ω･`)::</span><br><span class="line">  /⌒　　⌒)::</span><br><span class="line"> /へ_＿  / /::</span><br><span class="line">(＿＼＼  ﾐ)/::</span><br><span class="line">　 ｜ `-イ::</span><br><span class="line">　 /ｙ　 )::</span><br><span class="line">　/／  ／::</span><br><span class="line">／　／::</span><br><span class="line">(　く:::</span><br><span class="line">|＼ ヽ:::</span><br></pre></td></tr></table></figure>]]></content:encoded>
       
       
       <category domain="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/">日常</category>
