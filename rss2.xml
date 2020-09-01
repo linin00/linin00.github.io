@@ -9,8 +9,23 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Tue, 01 Sep 2020 06:04:31 GMT</pubDate>
+    <pubDate>Tue, 01 Sep 2020 06:09:09 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>you-get 使用</title>
+      <link>http://yoursite.com/2020/09/01/you-get-%E4%BD%BF%E7%94%A8/</link>
+      <guid>http://yoursite.com/2020/09/01/you-get-%E4%BD%BF%E7%94%A8/</guid>
+      <pubDate>Tue, 01 Sep 2020 06:09:09 GMT</pubDate>
+      
+      
+      
+      
+      
+      
+      <comments>http://yoursite.com/2020/09/01/you-get-%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>early start</title>
@@ -239,33 +254,6 @@
       
       
       <comments>http://yoursite.com/2020/08/11/%E5%9C%A8hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91%E7%9A%84%E6%96%B9%E6%B3%95/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>第一篇博客</title>
-      <link>http://yoursite.com/2020/08/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
-      <guid>http://yoursite.com/2020/08/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      <pubDate>Mon, 10 Aug 2020 21:34:33 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;啦啦啦，我的个人博客诞生了！🤣🤣🤣🤣🤣（还不太会写）&lt;/p&gt;
-</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>啦啦啦，我的个人博客诞生了！🤣🤣🤣🤣🤣（还不太会写）</p>]]></content:encoded>
-      
-      
-      <category domain="http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/">日常</category>
-      
-      
-      <category domain="http://yoursite.com/tags/%E6%97%A5%E5%B8%B8/">日常</category>
-      
-      
-      <comments>http://yoursite.com/2020/08/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/#disqus_thread</comments>
       
     </item>
     
