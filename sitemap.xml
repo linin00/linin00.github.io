@@ -151,7 +151,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/git/</loc>
+    <loc>http://yoursite.com/tags/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -165,7 +165,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E6%97%A5%E5%B8%B8/</loc>
+    <loc>http://yoursite.com/tags/git/</loc>
     <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -209,13 +209,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/github/</loc>
-    <lastmod>2020-09-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/categories/%E6%88%91/</loc>
     <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
@@ -223,7 +216,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <loc>http://yoursite.com/categories/github/</loc>
     <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -237,14 +230,21 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
+    <loc>http://yoursite.com/categories/hexo/</loc>
     <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/hexo/</loc>
+    <loc>http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/</loc>
+    <lastmod>2020-09-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/%E5%89%8D%E7%AB%AF/</loc>
     <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
