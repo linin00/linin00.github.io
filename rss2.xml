@@ -9,8 +9,35 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Fri, 14 Aug 2020 03:38:03 GMT</pubDate>
+    <pubDate>Tue, 01 Sep 2020 05:47:24 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>ffmpeg使用：抽取视频、抽取音频、音视频合成，etc</title>
+      <link>http://yoursite.com/2020/09/01/ffmpeg%E4%BD%BF%E7%94%A8/</link>
+      <guid>http://yoursite.com/2020/09/01/ffmpeg%E4%BD%BF%E7%94%A8/</guid>
+      <pubDate>Tue, 01 Sep 2020 05:29:25 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;&lt;strong&gt;抽取音频命令&lt;/strong&gt;&lt;br&gt;ffmpeg -i 3.mp4 -vn -y -acodec copy 3.aac&lt;br&gt;ffmpeg -i 3.mp4 -vn -y -acodec copy 3.m4a&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;提取视频 （Ex</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p><strong>抽取音频命令</strong><br>ffmpeg -i 3.mp4 -vn -y -acodec copy 3.aac<br>ffmpeg -i 3.mp4 -vn -y -acodec copy 3.m4a</p><p><strong>提取视频 （Extract Video）</strong><br>ffmpeg -i Life.of.Pi.has.subtitles.mkv -vcodec copy –an  videoNoAudioSubtitle.mp4</p><p><strong>音视频合成命令</strong><br>ffmpeg -i video2.avi -i audio.mp3 -vcodec copy -acodec copy output.avi</p><p><strong>查看音视频文件信息命令</strong><br>ffmpeg -i 3.mp4<br>ffmpeg -i 3.aac<br>ffmpeg -i 3.m4a</p><p>其中aac和ac3是音频编码格式。<br>aac全名是Advanced Audio Coding，后缀名一般为m4a、aac、mp4、mkv等，其中mp4、mkv为视频格式，采样率一般为44.1khz，码率一般是64kbps到192kbps，声道一般为双声道立体声。<br>ac3全称是（Dolby）Audio Codec 3，一般出现在DVD视频格式中，后缀名为vob，采样率一般为48khz，码率一般是192kbps到384kbps，声道为双声道或6声道。</p><pre><code class="bash">system(&quot;./ffmpeg -threads 1 -i $latline  -vn -ar 8000 -ac 1 -ab 64k   -acodec pcm_alaw   -f wav  $transline&quot;);Input #0, wav, from &#39;BUSautoClassify_9223370567097361188_3d45d8e5-897d-4dfc-9aa7-336f36d130ad.wav&#39;:  Metadata:    encoder         : Lavf55.33.100  Duration: 00:03:37.58, bitrate: 64 kb/s    Stream #0:0: Audio: pcm_alaw ([6][0][0][0] / 0x0006), 8000 Hz, mono, s16, 64 kb/sInput #0, wav, from &#39;BUSautoClassify_9223370566822417912_7c3207ed-1801-4ce0-8845-2ff6c8e00a64.wav&#39;:  Metadata:    encoder         : Lavf57.56.100  Duration: 00:04:47.32, bitrate: 64 kb/s    Stream #0:0: Audio: pcm_alaw ([6][0][0][0] / 0x0006), 8000 Hz, mono, s16, 64 kb/s```encoder 版本不同，转码速度就不同。</code></pre>]]></content:encoded>
+      
+      
+      <category domain="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      
+      <category domain="http://yoursite.com/tags/ffmpeg/">ffmpeg</category>
+      
+      
+      <comments>http://yoursite.com/2020/09/01/ffmpeg%E4%BD%BF%E7%94%A8/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>前端基础入门</title>
