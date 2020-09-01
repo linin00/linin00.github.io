@@ -229,6 +229,69 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/01/linin-s_00/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/back.jpg">
+      <meta itemprop="name" content="linin">
+      <meta itemprop="description" content="人不努力的时候，老天爷是会一点一点把你的天赋收走的">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="ｸﾞｯ!(๑•̀ㅂ•́)و✧">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/09/01/linin-s_00/" class="post-title-link" itemprop="url">linin's_00</a>
+        </h2>
+
+        <div class="post-meta">
+
+          
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2020-09-01 23:18:21 / 修改时间：23:19:20" itemprop="dateCreated datePublished" datetime="2020-09-01T23:18:21+08:00">2020-09-01</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>学会了加密博客，开心🤣🤣🤣🤣🤣🤣🤣🤣</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/09/01/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -256,7 +319,16 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-09-01 23:01:30 / 修改时间：23:02:25" itemprop="dateCreated datePublished" datetime="2020-09-01T23:01:30+08:00">2020-09-01</time>
+              <time title="创建时间：2020-09-01 23:01:30 / 修改时间：23:15:30" itemprop="dateCreated datePublished" datetime="2020-09-01T23:01:30+08:00">2020-09-01</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+                </span>
             </span>
 
           
@@ -270,7 +342,50 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          
+          <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Hexo的next主题可谓是包办了你几乎所有的需求，却偏偏没有加上<strong>文章加密功能</strong>。</p>
+<h3 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h3><h4 id="低级"><a href="#低级" class="headerlink" title="低级"></a>低级</h4><h5 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h5><p>打开yourblogsite/themes/next/layout/custom/head.swig文件，在<head></head>之间添加以下内容</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#JavaScript</span></span><br><span class="line">&lt;script&gt;</span><br><span class="line">    (<span class="function"><span class="title">function</span></span>()&#123;</span><br><span class="line">        <span class="keyword">if</span>(<span class="string">&#x27;&#123;&#123; page.password &#125;&#125;&#x27;</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span> (prompt(<span class="string">&#x27;请输入密码&#x27;</span>) !== <span class="string">&#x27;&#123;&#123; page.password &#125;&#125;&#x27;</span>)&#123;</span><br><span class="line">                alert(<span class="string">&#x27;密码错误&#x27;</span>);</span><br><span class="line">                history.back();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;)();</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<p>之后，在你想要加密的文章的头文件里添加上password: yourpassword即可。</p>
+<p>注意，这里仅针对Hexo平台的next主题。但是，它的代码和思想是通用的，你在Hexo的其他主题，甚至是Jekyll的主题里也是可以做到的，只是要摆放的位置会不一样。位置的要点是：</p>
+<ul>
+<li><p>模板文件。无论是Hexo还是Jekyll，都应该在layout文件夹中。</p>
+</li>
+<li><head></head>之间。其实在其他位置也是可行的，但是在此代码之前的一些内容可能会被加载，不完美。
+##### 存在问题
+目前主要问题是：</li>
+<li><p>丑。调用浏览器的UI，各个平台的样式不统一。</p>
+</li>
+<li><p>可能被破解。如果你的博客源码是存放在GitHub这样的开源库的话，那么恭喜你。别有用心之人可以通过查看你的GitHub仓库对应文章的md文件找到这个密码。</p>
+</li>
+</ul>
+<p>目前，我是把源码存在Coding的，他有私人仓库，所以不存在这样的问题。如果你是土豪程序猿，或者VPS，虚拟主机玩家，第二点也可以忽略。</p>
+<h3 id="高级"><a href="#高级" class="headerlink" title="高级"></a>高级</h3><p>真正高级别的方法早就有大神给做好了，同样是在hexo插件中心 &amp; GitHub。现将方法记录如下。</p>
+<h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-blog-encrypt</span><br></pre></td></tr></table></figure>
+<p>或者 <code>bashyarn add hexo-blog-encrypt</code>(需要安装 Yarn)</p>
+<h4 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h4><ol>
+<li>首先在 站点配置文件 中启用该插件:<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">encrypt:</span><br><span class="line">    <span class="built_in">enable</span>: <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+<li>然后在你的文章的头部添加上对应的字段，如 password, abstract, message<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章加密</span><br><span class="line">date: 2019-01-04T22:20:13.000Z</span><br><span class="line">category: 教程</span><br><span class="line">tags:</span><br><span class="line">  - 博客</span><br><span class="line">  - Hexo</span><br><span class="line">keywords: 博客文章密码</span><br><span class="line">password: TloveY</span><br><span class="line">abstract: 密码：TloveY</span><br><span class="line">message:  输入密码，查看文章</span><br><span class="line">---</span><br></pre></td></tr></table></figure></li>
+</ol>
+<ul>
+<li>password: 是该博客加密使用的密码</li>
+<li>abstract: 是该博客的摘要，会显示在博客的列表页</li>
+<li>message: 这个是博客查看时，密码输入框上面的描述性文字</li>
+</ul>
+<ol start="3">
+<li>如果你想对 TOC 也进行加密，则在 article.ejs 中将 TOC 的生成代码修改成如下：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;% <span class="keyword">if</span>(post.toc == <span class="literal">true</span>)&#123; %&gt;</span><br><span class="line">    &lt;div id=<span class="string">&quot;toc-div&quot;</span> class=<span class="string">&quot;toc-article&quot;</span> &lt;% <span class="keyword">if</span> (post.encrypt == <span class="literal">true</span>) &#123; %&gt;style=<span class="string">&quot;display:none&quot;</span> &lt;% &#125; %&gt;&gt;</span><br><span class="line">        &lt;strong class=<span class="string">&quot;toc-title&quot;</span>&gt;Index&lt;/strong&gt;</span><br><span class="line">        &lt;% <span class="keyword">if</span> (post.encrypt == <span class="literal">true</span>) &#123; %&gt;</span><br><span class="line">            &lt;%- toc(post.origin) %&gt;</span><br><span class="line">        &lt;% &#125; <span class="keyword">else</span> &#123; %&gt;</span><br><span class="line">            &lt;%- toc(post.content) %&gt;</span><br><span class="line">        &lt;% &#125; %&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br><span class="line">&lt;%- post.content %&gt;</span><br></pre></td></tr></table></figure></li>
+<li>然后使用 <code>bashhexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code>，来查看效果。<h4 id="自定义"><a href="#自定义" class="headerlink" title="自定义"></a>自定义</h4></li>
+<li>如果你对默认的主题不满意，或者希望修改默认的提示和摘要内容，你可以添加如下配置在 站点配置文件 中。<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">encrypt:</span><br><span class="line">  <span class="built_in">enable</span>: <span class="literal">true</span></span><br><span class="line">  default_abstract: 这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。</span><br><span class="line">  default_message: 输入密码，查看文章。</span><br></pre></td></tr></table></figure>
+这样，对于每一篇需要加密的文章就不必都在在头部添加 abstract 和 message 字段了，脚本会自动添加默认的内容填充。</li>
+<li>如果你希望对某一篇特定的文章做特殊处理（如本文的 abstract ，可以在对应文章的头部添加<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 文章加密</span><br><span class="line">date: 2019-01-04T22:20:13.000Z</span><br><span class="line">category: 教程</span><br><span class="line">tags:</span><br><span class="line">  - 博客</span><br><span class="line">  - Hexo</span><br><span class="line">keywords: 博客文章密码</span><br><span class="line">password: TloveY</span><br><span class="line">abstract: 密码：TloveY</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+此时，博客头部的 abstract 会覆盖 站点配置文件 的 default_abstract 实现自定义。<h4 id="存在问题"><a href="#存在问题" class="headerlink" title="存在问题"></a>存在问题</h4></li>
+</ol>
+<ul>
+<li><p>如果你开启了 字数统计功能 的话，那么本文的字数会显得比实际值大。</p>
+</li>
+<li><p>加密文章内部分脚本会失效，已知<strong>代码复制</strong>失效。</p>
+</li>
+</ul>
+
       
     </div>
 
@@ -397,7 +512,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-09-01 17:50:16 / 修改时间：19:27:41" itemprop="dateCreated datePublished" datetime="2020-09-01T17:50:16+08:00">2020-09-01</time>
+              <time title="创建时间：2020-09-01 17:50:16 / 修改时间：23:15:40" itemprop="dateCreated datePublished" datetime="2020-09-01T17:50:16+08:00">2020-09-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -427,7 +542,7 @@
 <li>Linux 系统：~/.ssh</li>
 <li>Mac 系统：~/.ssh</li>
 <li>Windows 10 ：C:/Users/ASUS/.ssh<br>接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。如果你实在找不到文件也没有关系，按照以下步骤直接在 Git Bash 上打开就行：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh </span><br><span class="line">$ ls</span><br><span class="line">$ cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#x74;&#x68;&#x75;&#98;&#46;&#x63;&#111;&#x6d;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
+<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#111;&#109;">&#x67;&#105;&#x74;&#64;&#x67;&#x69;&#x74;&#x68;&#117;&#x62;&#46;&#99;&#111;&#109;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
 </ul>
 <h4 id="2-提交文件"><a href="#2-提交文件" class="headerlink" title="2.提交文件"></a>2.提交文件</h4><p>提交文件有两种方法：</p>
 <p><strong>第一种：本地没有 git 仓库</strong></p>
@@ -456,8 +571,6 @@
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_35246620/article/details/69230109">通过 Git 将代码提交到 GitHub（上）- CSDN</a></li>
 <li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_35246620/article/details/69668846">通过 Git 将代码提交到 GitHub（下）- CSDN</a></li>
 </ol>
-<p>注明：转载自 <a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/103391101">https://zhuanlan.zhihu.com/p/103391101</a><br><em>有改动</em></p>
-<p>作者：枫叶<br>链接：<a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/103391101">https://zhuanlan.zhihu.com/p/103391101</a><br>来源：知乎<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
 
       
     </div>
@@ -506,7 +619,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2020-09-01 14:09:09 / 修改时间：17:45:48" itemprop="dateCreated datePublished" datetime="2020-09-01T14:09:09+08:00">2020-09-01</time>
+              <time title="创建时间：2020-09-01 14:09:09 / 修改时间：23:16:05" itemprop="dateCreated datePublished" datetime="2020-09-01T14:09:09+08:00">2020-09-01</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -636,8 +749,7 @@
 <p>翻译成人类的话：</p>
 <p>*如果您使用该软件构成侵犯版权的基础，或者您将该软件用于任何其他非法目的，作者不能对您承担任何责任。</p>
 <p>*我们只在这里运送代码，你如何使用它是由你自己决定。</p>
-<p>GitHub 主页 : <a target="_blank" rel="noopener" href="https://github.com/soimort/you-get">https://github.com/soimort/you-get</a><br>参考博客：<a target="_blank" rel="noopener" href="http://blog.csdn.net/abel_qy/article/details/51067964">http://blog.csdn.net/abel_qy/article/details/51067964</a><br>注明：转载自 <a target="_blank" rel="noopener" href="https://you-get.org/">https://you-get.org</a><br>you-get中文说明:<a target="_blank" rel="noopener" href="https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E*%E6%9C%89%E6%94%B9%E5%8A%A8">https://github.com/soimort/you-get/wiki/%E4%B8%AD%E6%96%87%E8%AF%B4%E6%98%8E*有改动</a>*</p>
-<p>作者：voQuan<br>链接：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/dd7f04c27a79">https://www.jianshu.com/p/dd7f04c27a79</a><br>来源：简书<br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。</p>
+<p>GitHub 主页 : <a target="_blank" rel="noopener" href="https://github.com/soimort/you-get">https://github.com/soimort/you-get</a><br>参考博客：<a target="_blank" rel="noopener" href="http://blog.csdn.net/abel_qy/article/details/51067964">http://blog.csdn.net/abel_qy/article/details/51067964</a></p>
 
       
     </div>
@@ -1004,80 +1116,6 @@ encoder 版本不同，转码速度就不同。</code></pre>
   
   
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/08/13/%E8%A7%86%E9%A2%91%E9%93%BE%E6%8E%A51/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/back.jpg">
-      <meta itemprop="name" content="linin">
-      <meta itemprop="description" content="人不努力的时候，老天爷是会一点一点把你的天赋收走的">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="ｸﾞｯ!(๑•̀ㅂ•́)و✧">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2020/08/13/%E8%A7%86%E9%A2%91%E9%93%BE%E6%8E%A51/" class="post-title-link" itemprop="url">视频链接1</a>
-        </h2>
-
-        <div class="post-meta">
-
-          
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-              
-
-              <time title="创建时间：2020-08-13 18:11:25 / 修改时间：19:02:46" itemprop="dateCreated datePublished" datetime="2020-08-13T18:11:25+08:00">2020-08-13</time>
-            </span>
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-folder"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E9%93%BE%E6%8E%A5/" itemprop="url" rel="index"><span itemprop="name">链接</span></a>
-                </span>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <h3 id="基础知识入门"><a href="#基础知识入门" class="headerlink" title="基础知识入门"></a>基础知识入门</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pE411q7FU?p=1">小白看一遍就会的前端基础入门</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1ux411d75J/">JavaScript开发必会基础</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1k4411w7sV/">JavaScript核心 DOM BOM操作</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pt411H7D6/">4天玩转jQuery入门</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV12J411m7MG/?p=31">快速入门vue.js</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nE41117BQ/">爆款微信小程序</a></p>
-<h3 id="前端实战项目"><a href="#前端实战项目" class="headerlink" title="前端实战项目"></a>前端实战项目</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nW411Z7kT/">乐淘移动商城</a><br><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nx411E7Rh/">百度外卖</a></p>
-<h3 id="微信小程序"><a href="#微信小程序" class="headerlink" title="微信小程序"></a>微信小程序</h3><p><a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1nE41117BQ">零基础玩转微信小程序</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
 
   
   <nav class="pagination">
@@ -1156,7 +1194,7 @@ encoder 版本不同，转码速度就不同。</code></pre>
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-count">16</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -1169,7 +1207,7 @@ encoder 版本不同，转码速度就不同。</code></pre>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">8</span>
+        <span class="site-state-item-count">9</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1429,7 +1467,7 @@ $(document).ready(function() {
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":320},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"encrypt":{"enable":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":320},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"encrypt":{"enable":true,"default_abstract":"这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。","default_message":"输入密码，查看文章。"},"log":false});</script></body>
 </html>
 
 <!--单击显示文字-->
