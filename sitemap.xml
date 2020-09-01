@@ -230,13 +230,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/hexo/</loc>
-    <lastmod>2020-09-01</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/categories/%E6%97%A5%E5%B8%B8/</loc>
     <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
@@ -245,6 +238,13 @@
   
   <url>
     <loc>http://yoursite.com/categories/%E9%93%BE%E6%8E%A5/</loc>
+    <lastmod>2020-09-01</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/categories/hexo/</loc>
     <lastmod>2020-09-01</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
