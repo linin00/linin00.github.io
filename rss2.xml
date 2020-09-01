@@ -9,8 +9,30 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Tue, 01 Sep 2020 05:47:24 GMT</pubDate>
+    <pubDate>Tue, 01 Sep 2020 06:01:46 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>early start</title>
+      <link>http://yoursite.com/2020/09/01/early-start/</link>
+      <guid>http://yoursite.com/2020/09/01/early-start/</guid>
+      <pubDate>Tue, 01 Sep 2020 05:53:55 GMT</pubDate>
+      
+        
+        
+      <description>&lt;p&gt;Windows 10 上安装了 wallpaperengine 用来美化桌面，虽然它被设置为开机自启，但是在进入桌面后很长一段时间内它还处于启动状态，桌面文件不能迅速加载出来。受如何调整 Windows 10 软件开机启动顺序启发，将这一过程记录下来，同时加入了前文中未提到</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<p>Windows 10 上安装了 wallpaperengine 用来美化桌面，虽然它被设置为开机自启，但是在进入桌面后很长一段时间内它还处于启动状态，桌面文件不能迅速加载出来。受如何调整 Windows 10 软件开机启动顺序启发，将这一过程记录下来，同时加入了前文中未提到的一些细节、注意事项以及如何卸载。</p><p><strong>安装过程</strong><br>首先，给出下面会使用到的工具的 repo：sylveon/EarlyStart</p><ol><li><p>到 <a href="https://github.com/sylveon/EarlyStart/releases">release page</a> 下载，我此时使用的是 1.0.0 版本。下载完后解压，并将文件夹放置在一个固定位置，比如我的是 D:\Code\EarlyStart</p></li><li><p>右键选中 EarlyStart.exe，在属性中常规 - 安全下取消勾选。如果和我一样，没有这个复选框的话，那就不用管。</p></li><li><p>以管理员身份运行 CMD，进入第一步中的文件夹路径。如果你和我一样也将其放置在非系统盘，那么需要加 /d 参数才行，比如我的是 cd /d D:\Code\EarlyStart（好像不加也行）</p></li><li><p>接着运行 %windir%\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe .\EarlyStart.exe，应该会有成功完成之类的字样，可以关闭 CMD 了</p></li></ol><p><strong>EarlyStart</strong></p><ol><li>在用户文件夹下，即 C:\Users&lt;username&gt; 下新建一个 .earlystart 文件，然后将想要 earlystart 的应用程序路径每行写入一个。比如我的是 “C:\Program Files (x86)\Stardock\Fences\Fences.exe”</li></ol><p><strong>注意</strong>：如果你写入上述文件的某一行程序路径无效的话，那么在这之后指定的任何程序都不会被 earlystart</p><ol start="2"><li>重启观察是否有变化</li></ol><p><strong>如何卸载</strong></p><ol><li><p>以管理员身份运行 CMD，进入上述第一步的文件夹内</p></li><li><p>运行 %windir%\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe /u .\EarlyStart.exe 提示成功之类的字样就 OK 了</p></li><li><p>删除 .earlystart 文件，如果喜欢的话</p></li></ol>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://yoursite.com/2020/09/01/early-start/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>ffmpeg使用：抽取视频、抽取音频、音视频合成，etc</title>
@@ -244,30 +266,6 @@
       
       
       <comments>http://yoursite.com/2020/08/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>http://yoursite.com/2020/08/10/hello-world/</link>
-      <guid>http://yoursite.com/2020/08/10/hello-world/</guid>
-      <pubDate>Mon, 10 Aug 2020 15:39:29 GMT</pubDate>
-      
-        
-        
-      <description>&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</description>
-        
-      
-      
-      
-      <content:encoded><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content:encoded>
-      
-      
-      
-      <category domain="http://yoursite.com/tags/hexo/">hexo</category>
-      
-      
-      <comments>http://yoursite.com/2020/08/10/hello-world/#disqus_thread</comments>
       
     </item>
     
