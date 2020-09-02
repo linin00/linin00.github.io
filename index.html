@@ -473,10 +473,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-01 23:41:15 / 修改时间：23:55:27" itemprop="dateCreated datePublished" datetime="2020-09-01T23:41:15+08:00">2020-09-01</time>
+              <time title="创建时间：2020-09-01 23:41:15" itemprop="dateCreated datePublished" datetime="2020-09-01T23:41:15+08:00">2020-09-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-02 17:00:21" itemprop="dateModified" datetime="2020-09-02T17:00:21+08:00">2020-09-02</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -560,7 +566,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-02 16:52:51" itemprop="dateModified" datetime="2020-09-02T16:52:51+08:00">2020-09-02</time>
+                <time title="修改时间：2020-09-02 16:58:33" itemprop="dateModified" datetime="2020-09-02T16:58:33+08:00">2020-09-02</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -629,6 +635,8 @@
 <li><p>加密文章内部分脚本会失效，已知<strong>代码复制</strong>失效。</p>
 </li>
 <li><p>加密输入密码无反应 bug。插件作者在之前版本已修复这个问题。 近期我也遇到了这个问题，查看GitHub上这个插件的issue发现，原因在于Chrome 将不再允许 https:// 页面加载 HTTP 资源，解决方案是开启博客的https访问，具体搜索怎么开启博客https访问即可。<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/509d2a240b7d">解决方案1</a><a target="_blank" rel="noopener" href="https://github.com/MikeCoder/hexo-blog-encrypt/issues/114">解决方案2</a></p>
+</li>
+<li><p>最后的解决是在GitHub page 强制开启https</p>
 </li>
 </ul>
 
@@ -794,7 +802,7 @@
 <li>Linux 系统：~/.ssh</li>
 <li>Mac 系统：~/.ssh</li>
 <li>Windows 10 ：C:/Users/ASUS/.ssh<br>接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。如果你实在找不到文件也没有关系，按照以下步骤直接在 Git Bash 上打开就行：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh </span><br><span class="line">$ ls</span><br><span class="line">$ cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;">&#x67;&#105;&#x74;&#64;&#103;&#x69;&#116;&#x68;&#x75;&#98;&#46;&#x63;&#x6f;&#x6d;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
+<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;">&#103;&#105;&#116;&#64;&#103;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#x6f;&#109;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
 </ul>
 <h4 id="2-提交文件"><a href="#2-提交文件" class="headerlink" title="2.提交文件"></a>2.提交文件</h4><p>提交文件有两种方法：</p>
 <p><strong>第一种：本地没有 git 仓库</strong></p>
