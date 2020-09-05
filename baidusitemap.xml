@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2020/09/02/%E7%BB%99blog%E5%A2%9E%E5%8A%A0%E4%B8%8A%E4%B8%8B%E6%96%87%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2020/09/01/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
     <loc>http://yoursite.com/2020/08/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2020-09-05</lastmod>
   </url>
@@ -25,10 +33,6 @@
     <lastmod>2020-09-05</lastmod>
   </url>
   <url>
-    <loc>http://yoursite.com/2020/09/01/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</loc>
-    <lastmod>2020-09-05</lastmod>
-  </url>
-  <url>
     <loc>http://yoursite.com/2020/09/01/you-get-%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2020-09-05</lastmod>
   </url>
@@ -42,10 +46,6 @@
   </url>
   <url>
     <loc>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</loc>
-    <lastmod>2020-09-02</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite.com/2020/09/02/%E7%BB%99blog%E5%A2%9E%E5%8A%A0%E4%B8%8A%E4%B8%8B%E6%96%87%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/</loc>
     <lastmod>2020-09-02</lastmod>
   </url>
   <url>

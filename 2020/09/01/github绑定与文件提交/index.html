@@ -20,7 +20,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="虽然在GitHub上我们可以直接上传文件，但是我试了一下发现并不好用，点击上传完全没反应，可能是网络的原因吧。所以我们利用SSH来完成GitHub的绑定并提交文件，这样很方便快捷。首先来简单介绍一下SSH协议。">
@@ -264,7 +264,7 @@
 <li>Linux 系统：~/.ssh</li>
 <li>Mac 系统：~/.ssh</li>
 <li>Windows 10 ：C:/Users/ASUS/.ssh<br>接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。如果你实在找不到文件也没有关系，按照以下步骤直接在 Git Bash 上打开就行：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh </span><br><span class="line">$ ls</span><br><span class="line">$ cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;">&#x67;&#x69;&#x74;&#64;&#x67;&#105;&#x74;&#104;&#x75;&#98;&#x2e;&#99;&#x6f;&#109;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
+<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;">&#103;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#x68;&#117;&#x62;&#x2e;&#99;&#111;&#x6d;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
 </ul>
 <h4 id="2-提交文件"><a href="#2-提交文件" class="headerlink" title="2.提交文件"></a>2.提交文件</h4><p>提交文件有两种方法：</p>
 <p><strong>第一种：本地没有 git 仓库</strong></p>
@@ -460,7 +460,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -720,7 +720,7 @@ $(document).ready(function() {
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":320},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"encrypt":{"enable":true,"default_abstract":"这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。","default_message":"输入密码，查看文章。"},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":320},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"encrypt":{"enable":true,"default_abstract":"这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。","default_message":"输入密码，查看文章。"},"search":{"path":"search.xml","field":"post"},"log":false});</script></body>
 </html>
 
 <!--单击显示文字-->

@@ -20,7 +20,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="人不努力的时候，老天爷是会一点一点把你的天赋收走的">
@@ -335,9 +335,24 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-02 08:40:43 / 修改时间：17:12:23" itemprop="dateCreated datePublished" datetime="2020-09-02T08:40:43+08:00">2020-09-02</time>
+              <time title="创建时间：2020-09-02 08:40:43" itemprop="dateCreated datePublished" datetime="2020-09-02T08:40:43+08:00">2020-09-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-05 19:01:41" itemprop="dateModified" datetime="2020-09-05T19:01:41+08:00">2020-09-05</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a>
+                </span>
             </span>
 
           
@@ -351,7 +366,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          给blog增加上下文搜索功能
+          加密博客测试
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/09/02/%E7%BB%99blog%E5%A2%9E%E5%8A%A0%E4%B8%8A%E4%B8%8B%E6%96%87%E6%90%9C%E7%B4%A2%E5%8A%9F%E8%83%BD/#more" rel="contents">
@@ -664,7 +679,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-05 18:37:20" itemprop="dateModified" datetime="2020-09-05T18:37:20+08:00">2020-09-05</time>
+                <time title="修改时间：2020-09-05 18:42:16" itemprop="dateModified" datetime="2020-09-05T18:42:16+08:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -688,7 +703,7 @@
 
       
           <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Hexo的next主题可谓是包办了你几乎所有的需求，却偏偏没有加上<strong>文章加密功能</strong>。</p>
-<h3 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h3><h4 id="低级"><a href="#低级" class="headerlink" title="低级"></a>低级</h4><h5 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h5><p>打开yourblogsite/themes/next/layout/custom/head.swig文件，在<head></head>之间添加以下内容
+<h3 id="实现方法"><a href="#实现方法" class="headerlink" title="实现方法"></a>实现方法</h3><h4 id="低级"><a href="#低级" class="headerlink" title="低级"></a>低级</h4><h5 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h5><p>打开yourblogsite/themes/next/layout/custom/head.swig文件，在<head></head>之间添加以下内容</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/2020/09/01/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/#more" rel="contents">
@@ -1053,7 +1068,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">14</span>
+        <span class="site-state-item-count">15</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -1313,7 +1328,7 @@ $(document).ready(function() {
 
   
 
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":320},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"encrypt":{"enable":true,"default_abstract":"这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。","default_message":"输入密码，查看文章。"},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/koharu.model.json"},"display":{"position":"left","width":150,"height":320},"mobile":{"show":true,"scale":0.5},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"encrypt":{"enable":true,"default_abstract":"这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你确实想看，请与我联系。","default_message":"输入密码，查看文章。"},"search":{"path":"search.xml","field":"post"},"log":false});</script></body>
 </html>
 
 <!--单击显示文字-->
