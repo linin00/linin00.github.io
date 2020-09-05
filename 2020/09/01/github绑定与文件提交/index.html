@@ -23,12 +23,12 @@
     var CONFIG = {"hostname":"yoursite.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":true,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"manual","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="虽然在GitHub上我们可以直接上传文件，但是我试了一下发现并不好用，点击上传完全没反应，可能是网络的原因吧。所以我们利用SSH来完成GitHub的绑定并提交文件，这样很方便快捷。首先来简单介绍一下SSH协议。 SSH（安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止">
+  <meta name="description" content="虽然在GitHub上我们可以直接上传文件，但是我试了一下发现并不好用，点击上传完全没反应，可能是网络的原因吧。所以我们利用SSH来完成GitHub的绑定并提交文件，这样很方便快捷。首先来简单介绍一下SSH协议。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="github绑定与文件提交">
 <meta property="og:url" content="http://yoursite.com/2020/09/01/github%E7%BB%91%E5%AE%9A%E4%B8%8E%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4/index.html">
 <meta property="og:site_name" content="ｸﾞｯ!(๑•̀ㅂ•́)و✧">
-<meta property="og:description" content="虽然在GitHub上我们可以直接上传文件，但是我试了一下发现并不好用，点击上传完全没反应，可能是网络的原因吧。所以我们利用SSH来完成GitHub的绑定并提交文件，这样很方便快捷。首先来简单介绍一下SSH协议。 SSH（安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止">
+<meta property="og:description" content="虽然在GitHub上我们可以直接上传文件，但是我试了一下发现并不好用，点击上传完全没反应，可能是网络的原因吧。所以我们利用SSH来完成GitHub的绑定并提交文件，这样很方便快捷。首先来简单介绍一下SSH协议。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://github.com/linin00/Cloud/blob/master/git00/1.png?raw=true">
 <meta property="og:image" content="https://github.com/linin00/Cloud/blob/master/git00/2.jpg?raw=true">
@@ -57,7 +57,7 @@
 <meta property="og:image" content="https://github.com/linin00/Cloud/blob/master/git00/25.jpg?raw=true">
 <meta property="og:image" content="https://github.com/linin00/Cloud/blob/master/git00/26.jpg?raw=true">
 <meta property="article:published_time" content="2020-09-01T09:50:16.000Z">
-<meta property="article:modified_time" content="2020-09-01T16:00:19.534Z">
+<meta property="article:modified_time" content="2020-09-05T10:38:30.726Z">
 <meta property="article:author" content="linin">
 <meta property="article:tag" content="工具">
 <meta property="article:tag" content="git">
@@ -226,7 +226,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-02 00:00:19" itemprop="dateModified" datetime="2020-09-02T00:00:19+08:00">2020-09-02</time>
+                <time title="修改时间：2020-09-05 18:38:30" itemprop="dateModified" datetime="2020-09-05T18:38:30+08:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -257,13 +257,14 @@
 
       
         <p>虽然在GitHub上我们可以直接上传文件，但是我试了一下发现并不好用，点击上传完全没反应，可能是网络的原因吧。所以我们利用SSH来完成GitHub的绑定并提交文件，这样很方便快捷。首先来简单介绍一下SSH协议。</p>
+<a id="more"></a>
 <p>SSH（安全外壳协议，Secure Shell 的缩写）是建立在应用层基础上的安全协议。SSH 是目前较可靠，专为远程登录会话和其他网络服务提供安全性的协议，利用 SSH 协议可以有效防止远程管理过程中的信息泄露问题。简单来说，SSH就是保障你的账户安全，将你的数据加密压缩，不仅防止其他人截获你的数据，还能加快传输速度。如果想详细了解的话，可以看这篇文章：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_35246620/article/details/54317740">详述 SSH 的原理及其应用 - CSDN</a>，下面就详细介绍如何绑定GitHub和提交文件。</p>
 <h4 id="1-绑定GitHub"><a href="#1-绑定GitHub" class="headerlink" title="1.绑定GitHub"></a>1.绑定GitHub</h4><p>我们要用git上传文件到GitHub首先得利用SSH登录远程主机，而登录方式有两种：一种是口令登录；另一种是公钥登录。口令登录每次都要输入密码十分麻烦，而公钥登录就省去了输入密码的步骤，所以我们选择公钥授权。首先我们得在 GitHub 上添加 SSH key 配置，要想生成SSH key，就要先安装 SSH，不过我们安装了 Git Bash，其应该自带了 SSH。检验一下是否安装 SSH，我们在新建的文件夹中右键打开 Git Bash：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/1.png?raw=true" alt="1"><br>输入 ssh 命令，查看本机是否安装 SSH：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/2.jpg?raw=true" alt="2"><br>如上图所示，即已安装 SSH. 然后，输入 ssh-keygen -t rsa 命令（注意空格），表示我们指定 RSA 算法生成密钥，然后敲四次回车键，之后就就会生成两个文件，分别为秘钥 id_rsa 和公钥 id_rsa.pub. （注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和 Shift+insert.）文件的位置在 Git Bash 上面都有显示，默认生成在以下目录：</p>
 <ul>
 <li>Linux 系统：~/.ssh</li>
 <li>Mac 系统：~/.ssh</li>
 <li>Windows 10 ：C:/Users/ASUS/.ssh<br>接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。如果你实在找不到文件也没有关系，按照以下步骤直接在 Git Bash 上打开就行：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh </span><br><span class="line">$ ls</span><br><span class="line">$ cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#116;&#x68;&#x75;&#x62;&#x2e;&#x63;&#111;&#109;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
+<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#111;&#x6d;">&#x67;&#x69;&#116;&#64;&#x67;&#105;&#x74;&#104;&#117;&#98;&#46;&#99;&#111;&#x6d;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
 </ul>
 <h4 id="2-提交文件"><a href="#2-提交文件" class="headerlink" title="2.提交文件"></a>2.提交文件</h4><p>提交文件有两种方法：</p>
 <p><strong>第一种：本地没有 git 仓库</strong></p>
@@ -459,7 +460,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

@@ -1,7 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2020/08/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2020/08/13/%E5%87%86%E5%A4%87%E8%BF%94%E6%A0%A1/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2020/09/01/early-start/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2020/09/01/ffmpeg%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2020/09/01/github%E7%BB%91%E5%AE%9A%E4%B8%8E%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
     <loc>http://yoursite.com/2020/09/05/Hexo-s-next%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E9%A6%96%E9%A1%B5%E6%98%BE%E7%A4%BA%E9%A2%84%E8%A7%88/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2020/09/01/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</loc>
+    <lastmod>2020-09-05</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2020/09/01/you-get-%E4%BD%BF%E7%94%A8/</loc>
     <lastmod>2020-09-05</lastmod>
   </url>
   <url>
@@ -9,11 +37,11 @@
     <lastmod>2020-09-05</lastmod>
   </url>
   <url>
-    <loc>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</loc>
-    <lastmod>2020-09-02</lastmod>
+    <loc>http://yoursite.com/2020/08/11/%E5%9C%A8hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
+    <lastmod>2020-09-05</lastmod>
   </url>
   <url>
-    <loc>http://yoursite.com/2020/09/01/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/</loc>
+    <loc>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</loc>
     <lastmod>2020-09-02</lastmod>
   </url>
   <url>
@@ -23,22 +51,6 @@
   <url>
     <loc>http://yoursite.com/2020/09/01/linin00/</loc>
     <lastmod>2020-09-02</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite.com/2020/09/01/you-get-%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2020-09-01</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite.com/2020/09/01/github%E7%BB%91%E5%AE%9A%E4%B8%8E%E6%96%87%E4%BB%B6%E6%8F%90%E4%BA%A4/</loc>
-    <lastmod>2020-09-01</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite.com/2020/09/01/ffmpeg%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2020-09-01</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite.com/2020/09/01/early-start/</loc>
-    <lastmod>2020-09-01</lastmod>
   </url>
   <url>
     <loc>http://yoursite.com/2020/08/13/web%E5%BC%80%E5%8F%91%E8%B5%B7%E6%AD%A5/</loc>
@@ -53,15 +65,7 @@
     <lastmod>2020-09-01</lastmod>
   </url>
   <url>
-    <loc>http://yoursite.com/2020/08/11/%E5%9C%A8hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
-    <lastmod>2020-09-01</lastmod>
-  </url>
-  <url>
     <loc>http://yoursite.com/2020/08/13/%E8%A7%86%E9%A2%91%E9%93%BE%E6%8E%A51/</loc>
-    <lastmod>2020-09-01</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite.com/2020/08/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/</loc>
     <lastmod>2020-09-01</lastmod>
   </url>
   <url>
@@ -71,10 +75,6 @@
   <url>
     <loc>http://yoursite.com/2020/08/13/%E5%B8%B8%E7%94%A8%E9%93%BE%E6%8E%A5/</loc>
     <lastmod>2020-08-14</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite.com/2020/08/13/%E5%87%86%E5%A4%87%E8%BF%94%E6%A0%A1/</loc>
-    <lastmod>2020-08-13</lastmod>
   </url>
   <url>
     <loc>http://yoursite.com/2020/08/11/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</loc>

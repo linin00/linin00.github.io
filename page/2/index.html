@@ -187,10 +187,16 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-09-01 13:53:55 / 修改时间：23:59:45" itemprop="dateCreated datePublished" datetime="2020-09-01T13:53:55+08:00">2020-09-01</time>
+              <time title="创建时间：2020-09-01 13:53:55" itemprop="dateCreated datePublished" datetime="2020-09-01T13:53:55+08:00">2020-09-01</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-05 18:38:41" itemprop="dateModified" datetime="2020-09-05T18:38:41+08:00">2020-09-05</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -213,35 +219,14 @@
 
       
           <p>Windows 10 上安装了 wallpaperengine 用来美化桌面，虽然它被设置为开机自启，但是在进入桌面后很长一段时间内它还处于启动状态，桌面文件不能迅速加载出来。受如何调整 Windows 10 软件开机启动顺序启发，将这一过程记录下来，加入了一些细节、注意事项以及如何卸载。</p>
-<p><strong>安装过程</strong><br>首先，给出下面会使用到的工具的 repo：sylveon/EarlyStart</p>
-<ol>
-<li><p>到 <a target="_blank" rel="noopener" href="https://github.com/sylveon/EarlyStart/releases">release page</a> 下载，我此时使用的是 1.0.0 版本。下载完后解压，并将文件夹放置在一个固定位置，比如我的是 D:\Code\EarlyStart</p>
-</li>
-<li><p>右键选中 EarlyStart.exe，在属性中常规 - 安全下取消勾选。如果和我一样，没有这个复选框的话，那就不用管。</p>
-</li>
-<li><p>以管理员身份运行 CMD，进入第一步中的文件夹路径。如果你和我一样也将其放置在非系统盘，那么需要加 /d 参数才行，比如我的是 cd /d D:\Code\EarlyStart（好像不加也行）</p>
-</li>
-<li><p>接着运行 %windir%\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe .\EarlyStart.exe，应该会有成功完成之类的字样，可以关闭 CMD 了<br><img src="https://upyun.iamzs.cn/2001/EarlyStart.png" alt="安装过程"></p>
-</li>
-</ol>
-<p><strong>EarlyStart</strong></p>
-<ol>
-<li>在用户文件夹下，即 C:\Users&lt;username&gt; 下新建一个 .earlystart 文件，然后将想要 earlystart 的应用程序路径每行写入一个。比如我的是 “C:\Program Files (x86)\Stardock\Fences\Fences.exe”</li>
-</ol>
-<p><strong>注意</strong>：如果你写入上述文件的某一行程序路径无效的话，那么在这之后指定的任何程序都不会被 earlystart</p>
-<ol start="2">
-<li>重启观察是否有变化</li>
-</ol>
-<p><strong>如何卸载</strong></p>
-<ol>
-<li><p>以管理员身份运行 CMD，进入上述第一步的文件夹内</p>
-</li>
-<li><p>运行 %windir%\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe /u .\EarlyStart.exe 提示成功之类的字样就 OK 了</p>
-</li>
-<li><p>删除 .earlystart 文件，如果喜欢的话</p>
-</li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/09/01/early-start/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -295,7 +280,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-02 00:00:14" itemprop="dateModified" datetime="2020-09-02T00:00:14+08:00">2020-09-02</time>
+                <time title="修改时间：2020-09-05 18:38:37" itemprop="dateModified" datetime="2020-09-05T18:38:37+08:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -319,34 +304,14 @@
 
       
           <p><strong>抽取音频命令</strong><br>ffmpeg -i 3.mp4 -vn -y -acodec copy 3.aac<br>ffmpeg -i 3.mp4 -vn -y -acodec copy 3.m4a</p>
-<p><strong>提取视频 （Extract Video）</strong><br>ffmpeg -i Life.of.Pi.has.subtitles.mkv -vcodec copy –an  videoNoAudioSubtitle.mp4</p>
-<p><strong>音视频合成命令</strong><br>ffmpeg -i video2.avi -i audio.mp3 -vcodec copy -acodec copy output.avi</p>
-<p><strong>查看音视频文件信息命令</strong><br>ffmpeg -i 3.mp4<br>ffmpeg -i 3.aac<br>ffmpeg -i 3.m4a</p>
-<p>其中aac和ac3是音频编码格式。<br>aac全名是Advanced Audio Coding，后缀名一般为m4a、aac、mp4、mkv等，其中mp4、mkv为视频格式，采样率一般为44.1khz，码率一般是64kbps到192kbps，声道一般为双声道立体声。<br>ac3全称是（Dolby）Audio Codec 3，一般出现在DVD视频格式中，后缀名为vob，采样率一般为48khz，码率一般是192kbps到384kbps，声道为双声道或6声道。</p>
-<pre><code class="bash">
-
-system(&quot;./ffmpeg -threads 1 -i $latline  -vn -ar 8000 -ac 1 -ab 64k   -acodec pcm_alaw   -f wav  $transline&quot;);
-
-
-
-Input #0, wav, from &#39;BUSautoClassify_9223370567097361188_3d45d8e5-897d-4dfc-9aa7-336f36d130ad.wav&#39;:
-  Metadata:
-    encoder         : Lavf55.33.100
-  Duration: 00:03:37.58, bitrate: 64 kb/s
-    Stream #0:0: Audio: pcm_alaw ([6][0][0][0] / 0x0006), 8000 Hz, mono, s16, 64 kb/s
-
-
-
-Input #0, wav, from &#39;BUSautoClassify_9223370566822417912_7c3207ed-1801-4ce0-8845-2ff6c8e00a64.wav&#39;:
-  Metadata:
-    encoder         : Lavf57.56.100
-  Duration: 00:04:47.32, bitrate: 64 kb/s
-    Stream #0:0: Audio: pcm_alaw ([6][0][0][0] / 0x0006), 8000 Hz, mono, s16, 64 kb/s```
-
-
-
-encoder 版本不同，转码速度就不同。</code></pre>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/09/01/ffmpeg%E4%BD%BF%E7%94%A8/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -400,7 +365,7 @@ encoder 版本不同，转码速度就不同。</code></pre>
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-01 23:53:40" itemprop="dateModified" datetime="2020-09-01T23:53:40+08:00">2020-09-01</time>
+                <time title="修改时间：2020-09-05 18:39:01" itemprop="dateModified" datetime="2020-09-05T18:39:01+08:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -424,9 +389,14 @@ encoder 版本不同，转码速度就不同。</code></pre>
 
       
           <h3 id="前端"><a href="#前端" class="headerlink" title="前端"></a><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%89%8D%E7%AB%AF/5956545">前端</a></h3><p>前端即网站前台部分，运行在PC端，移动端等浏览器上展现给用户浏览的网页。随着互联网技术的发展，HTML5，CSS3，前端框架的应用，跨平台响应式网页设计能够适应各种屏幕分辨率，合适的动效设计，给用户带来极高的用户体验。–《百度百科》</p>
-<h5 id="下面是B站上号称小白看一遍就会的前端基础入门视频"><a href="#下面是B站上号称小白看一遍就会的前端基础入门视频" class="headerlink" title="下面是B站上号称小白看一遍就会的前端基础入门视频"></a>下面是B站上号称<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1pE411q7FU/?p=223">小白看一遍就会的前端基础入门</a>视频</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style&#x3D;&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;&gt;&lt;iframe </span><br><span class="line">src&#x3D;&quot;https:&#x2F;&#x2F;www.bilibili.com&#x2F;video&#x2F;BV1pE411q7FU?p&#x3D;1&quot; scrolling&#x3D;&quot;no&quot; border&#x3D;&quot;0&quot; </span><br><span class="line">frameborder&#x3D;&quot;no&quot; framespacing&#x3D;&quot;0&quot; allowfullscreen&#x3D;&quot;true&quot; style&#x3D;&quot;position: absolute; width: 100%; </span><br><span class="line">height: 100%; left: 0; top: 0;&quot;&gt; &lt;&#x2F;iframe&gt;&lt;&#x2F;div&gt;</span><br><span class="line">2020-08-13（会自动重定向到B站，不知道怎么解决，烦）</span><br></pre></td></tr></table></figure>
-<p>加油，奥利给！<div style="text-align:center;color: #ccc;font-size:16px;"><font color=#f7b1bb >ｸﾞｯ!(๑•̀ㅂ•́)و✧</font></div></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/08/13/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80%E5%85%A5%E9%97%A8/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -631,10 +601,16 @@ encoder 版本不同，转码速度就不同。</code></pre>
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2020-08-13 15:52:29 / 修改时间：18:20:17" itemprop="dateCreated datePublished" datetime="2020-08-13T15:52:29+08:00">2020-08-13</time>
+              <time title="创建时间：2020-08-13 15:52:29" itemprop="dateCreated datePublished" datetime="2020-08-13T15:52:29+08:00">2020-08-13</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2020-09-05 18:38:47" itemprop="dateModified" datetime="2020-09-05T18:38:47+08:00">2020-09-05</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
@@ -656,8 +632,15 @@ encoder 版本不同，转码速度就不同。</code></pre>
     <div class="post-body" itemprop="articleBody">
 
       
-          <h1 id="上了一学期嘉立顿大学，终于可以回学校了-╥ω╥-（流下老母亲的泪水-jpg）"><a href="#上了一学期嘉立顿大学，终于可以回学校了-╥ω╥-（流下老母亲的泪水-jpg）" class="headerlink" title="上了一学期嘉立顿大学，终于可以回学校了 (╥ω╥`)  （流下老母亲的泪水.jpg）"></a>上了一学期嘉立顿大学，终于可以回学校了 (╥ω╥`)  （流下老母亲的泪水.jpg）</h1><p><img src="https://i.loli.net/2020/08/13/tlLvn9XxaiNKjuf.png" alt="回校注意事项"><br>（悄咪咪）“随申码”是个啥玩意？？？？？（ps:刚刚知道了<br>不过麻烦事还是超级多，两门线下考，不过过了这一阵子，又可以过上没羞没臊的奋斗生活了</p>
-<h2 id="一个软件工程的学子！୧-⁼̴̶̤̀ω⁼̴̶̤́-૭"><a href="#一个软件工程的学子！୧-⁼̴̶̤̀ω⁼̴̶̤́-૭" class="headerlink" title="一个软件工程的学子！୧( ⁼̴̶̤̀ω⁼̴̶̤́ )૭"></a>一个软件工程的学子！୧( ⁼̴̶̤̀ω⁼̴̶̤́ )૭</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"> 　  ∧_∧::</span><br><span class="line"> 　 (´･ω･`)::</span><br><span class="line">  /⌒　　⌒)::</span><br><span class="line"> /へ_＿  / /::</span><br><span class="line">(＿＼＼  ﾐ)/::</span><br><span class="line">　 ｜ `-イ::</span><br><span class="line">　 /ｙ　 )::</span><br><span class="line">　/／  ／::</span><br><span class="line">／　／::</span><br><span class="line">(　く:::</span><br><span class="line">|＼ ヽ:::</span><br></pre></td></tr></table></figure>
+          <h1 id="上了一学期嘉立顿大学，终于可以回学校了-╥ω╥-（流下老母亲的泪水-jpg）"><a href="#上了一学期嘉立顿大学，终于可以回学校了-╥ω╥-（流下老母亲的泪水-jpg）" class="headerlink" title="上了一学期嘉立顿大学，终于可以回学校了 (╥ω╥`)  （流下老母亲的泪水.jpg）"></a>上了一学期嘉立顿大学，终于可以回学校了 (╥ω╥`)  （流下老母亲的泪水.jpg）</h1><p><img src="https://i.loli.net/2020/08/13/tlLvn9XxaiNKjuf.png" alt="回校注意事项"><br>（悄咪咪）“随申码”是个啥玩意？？？？？（ps:刚刚知道了
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/08/13/%E5%87%86%E5%A4%87%E8%BF%94%E6%A0%A1/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -789,7 +772,7 @@ encoder 版本不同，转码速度就不同。</code></pre>
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-01 23:54:13" itemprop="dateModified" datetime="2020-09-01T23:54:13+08:00">2020-09-01</time>
+                <time title="修改时间：2020-09-05 18:35:58" itemprop="dateModified" datetime="2020-09-05T18:35:58+08:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -815,15 +798,14 @@ encoder 版本不同，转码速度就不同。</code></pre>
           <h1 id="图片插入"><a href="#图片插入" class="headerlink" title="图片插入"></a>图片插入</h1><p>Hexo 有多种图片插入方式，可将图片放在本地或CDN引用</p>
 <h2 id="方法一"><a href="#方法一" class="headerlink" title="方法一"></a>方法一</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">![我的照片](https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg)</span><br></pre></td></tr></table></figure>
 <h3 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h3><p>没有空格，重音符```<br>这种方法无法自定义图片样式<br>例<br><img src="https://i.loli.net/2020/08/11/ANEMbFekhSGsUvV.jpg" alt="我的照片"></p>
-<h2 id="方法二"><a href="#方法二" class="headerlink" title="方法二"></a>方法二</h2><p>（待续）</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>
-<h1 id="视频插入"><a href="#视频插入" class="headerlink" title="视频插入"></a>视频插入</h1><p>（B站紫颜小姐姐）</p>
-<h2 id="方法一-1"><a href="#方法一-1" class="headerlink" title="方法一"></a>方法一</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;iframe src=<span class="string">&quot;视频网址&quot;</span> scrolling=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> frameborder=<span class="string">&quot;no&quot;</span> framespacing=<span class="string">&quot;0&quot;</span> allowfullscreen=<span class="string">&quot;true&quot;</span> width=<span class="string">&quot;100%&quot;</span>  height=<span class="string">&quot;580&quot;</span> quality=<span class="string">&quot;high&quot;</span> &gt; &lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">&lt;iframe src=<span class="string">&quot;https://www.bilibili.com/video/BV1Cf4y117F1&quot;</span> scrolling=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> frameborder=<span class="string">&quot;no&quot;</span> framespacing=<span class="string">&quot;0&quot;</span> allowfullscreen=<span class="string">&quot;true&quot;</span> width=<span class="string">&quot;100%&quot;</span>  height=<span class="string">&quot;580&quot;</span> quality=<span class="string">&quot;high&quot;</span> &gt; &lt;/iframe&gt;</span><br></pre></td></tr></table></figure>
-<p>但是手机端不能自适应，你以为这就完了？</p>
-<h2 id="方法二-1"><a href="#方法二-1" class="headerlink" title="方法二"></a>方法二</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style=<span class="string">&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;</span>&gt;&lt;iframe </span><br><span class="line">src=<span class="string">&quot;视频地址&quot;</span> scrolling=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> </span><br><span class="line">frameborder=<span class="string">&quot;no&quot;</span> framespacing=<span class="string">&quot;0&quot;</span> allowfullscreen=<span class="string">&quot;true&quot;</span> style=<span class="string">&quot;position: absolute; width: 100%; </span></span><br><span class="line"><span class="string">height: 100%; left: 0; top: 0;&quot;</span>&gt; &lt;/iframe&gt;&lt;/div&gt;</span><br><span class="line"></span><br><span class="line">&lt;div style=<span class="string">&quot;position: relative; width: 100%; height: 0; padding-bottom: 75%;&quot;</span>&gt;&lt;iframe </span><br><span class="line">src=<span class="string">&quot;https://www.bilibili.com/video/BV1rQ4y1N7Xv&quot;</span> scrolling=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> </span><br><span class="line">frameborder=<span class="string">&quot;no&quot;</span> framespacing=<span class="string">&quot;0&quot;</span> allowfullscreen=<span class="string">&quot;true&quot;</span> style=<span class="string">&quot;position: absolute; width: 100%; </span></span><br><span class="line"><span class="string">height: 100%; left: 0; top: 0;&quot;</span>&gt; &lt;/iframe&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<h2 id="方法三"><a href="#方法三" class="headerlink" title="方法三"></a>方法三</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% dplayer <span class="string">&quot;url=https://www.bilibili.com/video/BV1rQ4y1N7Xv&quot;</span>  <span class="string">&quot;pic=http://home.ustc.edu.cn/~mmmwhy/GEM.jpg&quot;</span> <span class="string">&quot;loop=yes&quot;</span> <span class="string">&quot;theme=#FADFA3&quot;</span> <span class="string">&quot;autoplay=false&quot;</span> <span class="string">&quot;token=tokendemo&quot;</span> %&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h1><p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/26a7fc7cc185">Hexo博客中插入音乐/视频/</a></p>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/08/11/%E5%9C%A8hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91%E7%9A%84%E6%96%B9%E6%B3%95/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -1090,7 +1072,7 @@ encoder 版本不同，转码速度就不同。</code></pre>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-count">14</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
