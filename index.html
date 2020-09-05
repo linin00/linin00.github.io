@@ -338,7 +338,7 @@
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2020-09-05 18:21:59" itemprop="dateModified" datetime="2020-09-05T18:21:59+08:00">2020-09-05</time>
+                <time title="修改时间：2020-09-05 18:24:09" itemprop="dateModified" datetime="2020-09-05T18:24:09+08:00">2020-09-05</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -371,27 +371,27 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install youtube-dl</span><br></pre></td></tr></table></figure>
 <p>官网上的这个页面还提供了 Windows 可用的 exe 和直接通过 curl 或 wget 安装的方法。</p>
 <p>官网上的<a target="_blank" rel="noopener" href="http://rg3.github.io/youtube-dl/download.html">这个页面</a>还提供了 Windows 可用的 exe 和直接通过 curl 或 wget 安装的方法。</p>
-<h3 id="利用-Youtube-dl-下载"><a href="#利用-Youtube-dl-下载" class="headerlink" title="利用 Youtube-dl 下载"></a>利用 Youtube-dl 下载</h3><h4 id="普通下载"><a href="#普通下载" class="headerlink" title="普通下载"></a>普通下载</h4><p>通过 Youtube-dl 下载视频十分简洁，例如你需要下载<a target="_blank" rel="noopener" href="http://www.bilibili.com/video/av11728123/%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%EF%BC%9A">http://www.bilibili.com/video/av11728123/可以这样：</a></p>
+<h2 id="利用-Youtube-dl-下载"><a href="#利用-Youtube-dl-下载" class="headerlink" title="利用 Youtube-dl 下载"></a>利用 Youtube-dl 下载</h2><h3 id="普通下载"><a href="#普通下载" class="headerlink" title="普通下载"></a>普通下载</h3><p>通过 Youtube-dl 下载视频十分简洁，例如你需要下载<a target="_blank" rel="noopener" href="http://www.bilibili.com/video/av11728123/%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%EF%BC%9A">http://www.bilibili.com/video/av11728123/可以这样：</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl <span class="string">&#x27;http://www.bilibili.com/video/av11728123/&#x27;</span></span><br></pre></td></tr></table></figure>
 
 <p>你会得到这样的结果：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[BiliBili] 11728123: Downloading webpage</span><br><span class="line">[BiliBili] 11728123: Downloading video info page</span><br><span class="line">[download] Destination: 【全明星freestyle】音浪-11728123.mp4</span><br><span class="line">[download] 100% of 9.07MiB <span class="keyword">in</span> 00:01</span><br></pre></td></tr></table></figure>
 
 <p>如果你不进行任何特殊的指定，它会分析网页、自动选择默认画质并下载至Destination显示的文件中。</p>
-<h4 id="输出文件的名字"><a href="#输出文件的名字" class="headerlink" title="输出文件的名字"></a>输出文件的名字</h4><p>如果你想指定输出文件的名字（有时对批量下载的人来说十分重要），你可以使用-o：</p>
+<h3 id="输出文件的名字"><a href="#输出文件的名字" class="headerlink" title="输出文件的名字"></a>输出文件的名字</h3><p>如果你想指定输出文件的名字（有时对批量下载的人来说十分重要），你可以使用-o：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl <span class="string">&#x27;http://www.bilibili.com/video/av11728123/&#x27;</span> -o <span class="string">&#x27;你要的名字&#x27;</span></span><br><span class="line"><span class="comment"># 下载至文件：你要的名字 (无后缀)</span></span><br></pre></td></tr></table></figure>
 
 <p>当然，请注意你选择的名字的拓展名，youtube-dl 并不会自动修改你所指定的后缀名。youtube-dl 同时也支持 <a target="_blank" rel="noopener" href="https://github.com/rg3/youtube-dl#output-template">OUTPUT TEMPLATE</a>，你可以利用 %(title)s等参数（参考 Python 的字符串形式）将文件命名，例如：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl <span class="string">&#x27;http://www.bilibili.com/video/av11728123/&#x27;</span> -o <span class="string">&#x27;%(title)s.%(ext)s&#x27;</span></span><br><span class="line"><span class="comment"># 下载至文件：【全明星freestyle】音浪.mp4</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="使用代理下载"><a href="#使用代理下载" class="headerlink" title="使用代理下载"></a>使用代理下载</h4><p>youtube-dl 提供了使用代理的参数，你可以简单地将自己代理的地址填入：</p>
+<h3 id="使用代理下载"><a href="#使用代理下载" class="headerlink" title="使用代理下载"></a>使用代理下载</h3><p>youtube-dl 提供了使用代理的参数，你可以简单地将自己代理的地址填入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl --proxy 127.0.0.1:1087 <span class="string">&#x27;https://www.youtube.com/watch\?v\=_fc_TLg3eQ4&#x27;</span></span><br><span class="line"><span class="comment"># 成功通过ss在国内下载某不存在网站的视频</span></span><br></pre></td></tr></table></figure>
 <p>如果你不清楚如何使用自己的代理网址，请询问你的代理提供商。</p>
-<h4 id="将流文件直接转发到播放器"><a href="#将流文件直接转发到播放器" class="headerlink" title="将流文件直接转发到播放器"></a>将流文件直接转发到播放器</h4><p>你可以使用标准输入输出进行这一操作，下面是使用 vlc 播放的方法：</p>
+<h3 id="将流文件直接转发到播放器"><a href="#将流文件直接转发到播放器" class="headerlink" title="将流文件直接转发到播放器"></a>将流文件直接转发到播放器</h3><p>你可以使用标准输入输出进行这一操作，下面是使用 vlc 播放的方法：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">youtube-dl -o - <span class="string">&quot;https://www.youtube.com/watch\?v\=_fc_TLg3eQ4&quot;</span> | vlc -</span><br></pre></td></tr></table></figure>
 
-<h4 id="其他下载选项"><a href="#其他下载选项" class="headerlink" title="其他下载选项"></a>其他下载选项</h4><p>youtube-dl 还提供很多其他的下载选项，如挑选合适的分辨率，下载一个播放列表等，你可以研究并自定义如何下载一个文件。</p>
-<h4 id="国内的-youtube-dl：-You-Get"><a href="#国内的-youtube-dl：-You-Get" class="headerlink" title="国内的 youtube-dl： You-Get"></a>国内的 youtube-dl： <a target="_blank" rel="noopener" href="https://linin.xyz/2020/09/01/you-get-%E4%BD%BF%E7%94%A8/">You-Get</a></h4><p>You-Get的GitHub地址：<a target="_blank" rel="noopener" href="https://github.com/soimort/you-get">soimort/you-get</a><br>事实上而言，我发现You-Get对国内视频网站的支持更加全面，但是由于作者已经有大约两个月的时间没有维护了，我在这里不作推荐。但是如果你遇到无法使用youtube-dl下载的视频页面，不妨试试这个同类小工具。</p>
+<h3 id="其他下载选项"><a href="#其他下载选项" class="headerlink" title="其他下载选项"></a>其他下载选项</h3><p>youtube-dl 还提供很多其他的下载选项，如挑选合适的分辨率，下载一个播放列表等，你可以研究并自定义如何下载一个文件。</p>
+<h2 id="国内的-youtube-dl：-You-Get"><a href="#国内的-youtube-dl：-You-Get" class="headerlink" title="国内的 youtube-dl： You-Get"></a>国内的 youtube-dl： <a target="_blank" rel="noopener" href="https://linin.xyz/2020/09/01/you-get-%E4%BD%BF%E7%94%A8/">You-Get</a></h2><p>You-Get的GitHub地址：<a target="_blank" rel="noopener" href="https://github.com/soimort/you-get">soimort/you-get</a><br>事实上而言，我发现You-Get对国内视频网站的支持更加全面，但是由于作者已经有大约两个月的时间没有维护了，我在这里不作推荐。但是如果你遇到无法使用youtube-dl下载的视频页面，不妨试试这个同类小工具。</p>
 
       
     </div>
@@ -846,7 +846,7 @@
 <li>Linux 系统：~/.ssh</li>
 <li>Mac 系统：~/.ssh</li>
 <li>Windows 10 ：C:/Users/ASUS/.ssh<br>接下来我们要做的事情就是把公钥 id_rsa.pub 的内容添加到 GitHub。复制公钥 id_rsa.pub 文件里的内容，你可以通过目录找到 id_rsa.pub 文件的位置，用记事本打开文件复制。如果你实在找不到文件也没有关系，按照以下步骤直接在 Git Bash 上打开就行：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> ~/.ssh </span><br><span class="line">$ ls</span><br><span class="line">$ cat id_rsa.pub</span><br></pre></td></tr></table></figure>
-<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#109;">&#x67;&#x69;&#x74;&#x40;&#x67;&#105;&#116;&#104;&#x75;&#x62;&#x2e;&#99;&#111;&#109;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
+<img src="https://github.com/linin00/Cloud/blob/master/git00/3.jpg?raw=true" alt="3"><br>（再次注意：git中的复制粘贴不是 Ctrl+C 和 Ctrl+V，而是 Ctrl+insert 和Shift+insert.）接下来进入我们的 GitHub 主页，先点击右上角，再点击 settings ：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/4.jpg?raw=true" alt="4"><br>如下图，先点击 SSH and GPG keys，再点击 New SSH key.<br><img src="https://github.com/linin00/Cloud/blob/master/git00/5.jpg?raw=true" alt="5"><br>将复制的公钥 id_rsa.pub 的内容粘贴到 key 内，再点击 Add SSH key，如下图：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/6.jpg?raw=true" alt="6"><br>验证是否成功，我们可以通过在 Git Bash 中输入 ssh -T <a href="mailto:&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;">&#x67;&#105;&#116;&#x40;&#103;&#x69;&#x74;&#x68;&#x75;&#x62;&#x2e;&#99;&#111;&#x6d;</a> 进行检验：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/7.png?raw=true" alt="7"><br>第一次会出现这种情况，填 yes 就行，若出现下图中的情况，则表明绑定成功：<br><img src="https://github.com/linin00/Cloud/blob/master/git00/8.png?raw=true" alt="8"></li>
 </ul>
 <h4 id="2-提交文件"><a href="#2-提交文件" class="headerlink" title="2.提交文件"></a>2.提交文件</h4><p>提交文件有两种方法：</p>
 <p><strong>第一种：本地没有 git 仓库</strong></p>
