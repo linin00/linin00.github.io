@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</loc>
+    <lastmod>2020-09-13</lastmod>
+  </url>
+  <url>
     <loc>http://yoursite.com/2020/09/12/%E4%BF%A1%E6%81%AF%E8%BD%B0%E7%82%B8/</loc>
     <lastmod>2020-09-12</lastmod>
   </url>
@@ -55,10 +59,6 @@
   <url>
     <loc>http://yoursite.com/2020/08/11/%E5%9C%A8hexo%E4%B8%AD%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91%E7%9A%84%E6%96%B9%E6%B3%95/</loc>
     <lastmod>2020-09-05</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</loc>
-    <lastmod>2020-09-02</lastmod>
   </url>
   <url>
     <loc>http://yoursite.com/2020/09/01/linin00/</loc>
