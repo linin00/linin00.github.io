@@ -242,13 +242,6 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2020-09-30</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/tags/%E6%8C%87%E5%8D%97/</loc>
     <lastmod>2020-09-30</lastmod>
     <changefreq>daily</changefreq>
@@ -264,6 +257,13 @@
   
   <url>
     <loc>http://yoursite.com/tags/markdown/</loc>
+    <lastmod>2020-09-30</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/</loc>
     <lastmod>2020-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -298,7 +298,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/%E5%A5%BD%E7%8E%A9/</loc>
+    <loc>http://yoursite.com/tags/you-get/</loc>
     <lastmod>2020-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -312,7 +312,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/tags/you-get/</loc>
+    <loc>http://yoursite.com/tags/%E5%A5%BD%E7%8E%A9/</loc>
     <lastmod>2020-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -363,14 +363,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/ffmpeg/</loc>
+    <loc>http://yoursite.com/categories/Markdown/</loc>
     <lastmod>2020-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/Markdown/</loc>
+    <loc>http://yoursite.com/categories/ffmpeg/</loc>
     <lastmod>2020-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -398,7 +398,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/%E5%A5%BD%E7%8E%A9/</loc>
+    <loc>http://yoursite.com/categories/you-get/</loc>
     <lastmod>2020-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -412,7 +412,7 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/categories/you-get/</loc>
+    <loc>http://yoursite.com/categories/%E5%A5%BD%E7%8E%A9/</loc>
     <lastmod>2020-09-30</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
