@@ -9,8 +9,30 @@
     <atom:link href="http://yoursite.com/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人不努力的时候，老天爷是会一点一点把你的天赋收走的</description>
-    <pubDate>Sat, 12 Sep 2020 15:31:54 GMT</pubDate>
+    <pubDate>Wed, 30 Sep 2020 09:11:11 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>L_ink_card</title>
+      <link>http://yoursite.com/2020/09/30/L-ink-card/</link>
+      <guid>http://yoursite.com/2020/09/30/L-ink-card/</guid>
+      <pubDate>Wed, 30 Sep 2020 09:10:19 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;L-ink-电子墨水屏NFC智能卡片&quot;&gt;&lt;a href=&quot;#L-ink-电子墨水屏NFC智能卡片&quot; class=&quot;headerlink&quot; title=&quot;[L-ink]电子墨水屏NFC智能卡片&quot;&gt;&lt;/a&gt;[L-ink]电子墨水屏NFC智能卡片&lt;/h1&gt;&lt;blockq</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="L-ink-电子墨水屏NFC智能卡片"><a href="#L-ink-电子墨水屏NFC智能卡片" class="headerlink" title="[L-ink]电子墨水屏NFC智能卡片"></a>[L-ink]电子墨水屏NFC智能卡片</h1><blockquote><p>这是为了解决个人使用IC卡时遇到的一些痛点设计的一个迷你NFC智能卡片，基于STM32L051和ST25DV。</p><p>想着既然要自制这玩意那就往炫酷了做，于是很自觉地把电子墨水屏也加上了，顺手也写了个配套APP用于显示内容定制。</p><p>总之是个比较有意思的小项目，方案不算复杂，第一版设计也存在一些值得改进的地方，后续有空会继续优化方案设计的。</p></blockquote><p><img src="Image/L-ink_V0.5.jpg"></p><h2 id="演示视频"><a href="#演示视频" class="headerlink" title="演示视频"></a>演示视频</h2><p>B站指路：<a href="https://www.bilibili.com/video/BV1Cf4y1y7KT/">https://www.bilibili.com/video/BV1Cf4y1y7KT/</a></p><h2 id="项目文件说明"><a href="#项目文件说明" class="headerlink" title="项目文件说明"></a>项目文件说明</h2><ul><li><strong>Hardware</strong>：source里面是电路原理图和PCB文件，使用Altium Designer打开；release里面是gerber文件可以直接发给厂家打样，也包含了元器件BOM表（部分IC不太常用可能要单独购买）。</li><li><strong>Firmware</strong>：STM32L051的固件，我提供了Clion和Keil两个版本的工程文件，源码内容是一致的，分两个版本只是因为个人对Clion爱得深沉。</li><li><strong>3D Model</strong>：屏幕架和外壳的3D文件，step格式一般3D建模软件都能打开编辑，STL格式用于直接3D打印。</li><li><strong>DAP-Link</strong>：自己设计的下载调试器的硬件和固件源码，也包括预编译的hex固件，如果你有J-Link或者ST-Link之类的下载器就不用这个了。</li><li><strong>Android</strong>：配套的APP安装包。</li></ul><h2 id="固件编译说明"><a href="#固件编译说明" class="headerlink" title="固件编译说明"></a>固件编译说明</h2><p>STM32因为使用了L0系列的MCU，所以如果你是第一次在你的电脑上开发STM32L0，那么需要先装一下L0的固件支持包，有两种方式：</p><ol><li><p>使用STM32CubMX安装：</p><p><img src="Image/bsp1.jpg"></p><p><img src="Image/bsp2.jpg"></p></li><li><p>使用Keil的Package Installer安装：</p><p><img src="Image/bsp3.jpg"></p><p><img src="Image/bsp4.jpg"></p></li></ol><p>然后就不会报头文件的错误了。</p><p>有几点注意的：</p><ul><li>如果想在Clion中编译工程的话可以参考我这篇教程：<a href="https://zhuanlan.zhihu.com/p/145801160">https://zhuanlan.zhihu.com/p/145801160</a></li><li>Clion中OpenOCD默认是使用ST-Link下载，其他下载器自己修改工程目录下的stlink.cfg文件</li></ul><h2 id="关于硬件方案"><a href="#关于硬件方案" class="headerlink" title="关于硬件方案"></a>关于硬件方案</h2><p>硬件方案比较简单，主要IC就两个–STM32和ST25DV，电子墨水屏是200x200的单色屏幕，我是买的微雪的（注意如果是买的几年前的库存，那驱动芯片会有点区别导致代码不通用，只要是新款的应该都没问题）。</p><p>ST25DV作为NFC的PHY通过I2C总线和STM32通信，主要作用有两个：能量采集以及NFC通信。注意，ST25DV只是负责和手机进行NFC通信，而不负责IC卡的读写功能，因为<strong>ST25DV只支持ISO 15693的RFID协议，而我们常用的IC卡（M1卡）是ISO 14443协议的</strong>，所以并不能直接使用这颗芯片进行IC卡模拟。</p><p>IC卡的模拟功能这一版中实现得比较简单，就是直接集成了多颗UID芯片（很便宜，1~2元一片），然后和ST25DV共用NFC天线，卡片的切换是通过拨轮换挡实现的。好处在于，你可以把L-ink当作多张独立卡片的合集处理，复制和刷卡都是很直接的（使用PM3或者PN532等模块读取原卡信息并写入L-link）。当然缺点就是添加的卡片一多，按键的数量就要增加（因为每一档对应一张卡）。</p><p>所以我也在改进方案，后面可能会使用支持ISO 14443协议的ST95或者ST25T系列的芯片来实现软件层面的IC卡模拟功能。</p><p>另外下一个版本的硬件方案<strong>我会把黑白的电子墨水屏换成彩色的</strong>。</p><h2 id="关于配套APP"><a href="#关于配套APP" class="headerlink" title="关于配套APP"></a>关于配套APP</h2><p>Android APP目前只是实现了功能，这是基于我以前做的一个算法验证框架APP改的，UI还没有重新做设计，可以等后续更新。</p><p>工程文件的话我后面可以把其中的核心功能模块封装成Module，然后给个Sample Project供参考使用，工作太忙等我缓过这阵子先~</p><h2 id="教程整理中…"><a href="#教程整理中…" class="headerlink" title="教程整理中…"></a>教程整理中…</h2><p>有问题先看Issue（包括已经close的），另外</p><h4 id="跟项目工程无关的问题不要发在Issues里面！跟项目工程无关的问题不要发在Issues里面！跟项目工程无关的问题不要发在Issues里面！"><a href="#跟项目工程无关的问题不要发在Issues里面！跟项目工程无关的问题不要发在Issues里面！跟项目工程无关的问题不要发在Issues里面！" class="headerlink" title="跟项目工程无关的问题不要发在Issues里面！跟项目工程无关的问题不要发在Issues里面！跟项目工程无关的问题不要发在Issues里面！"></a>跟项目工程无关的问题不要发在Issues里面！跟项目工程无关的问题不要发在Issues里面！跟项目工程无关的问题不要发在Issues里面！</h4><p>聊天内容可以给我发评论或者私信（B站、知乎），我看到的话基本都会回复，issue里面发的话所有watch项目的人都会收到邮件，会对大家产生困扰的！</p>]]></content:encoded>
+      
+      
+      
+      
+      <comments>http://yoursite.com/2020/09/30/L-ink-card/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>信息轰炸</title>
@@ -259,29 +281,6 @@
       
       
       <comments>http://yoursite.com/2020/09/01/hexo%E6%96%87%E7%AB%A0%E5%8A%A0%E5%AF%86/#disqus_thread</comments>
-      
-    </item>
-    
-    <item>
-      <title>加密测试</title>
-      <link>http://yoursite.com/2020/09/01/%E5%8A%A0%E5%AF%86/</link>
-      <guid>http://yoursite.com/2020/09/01/%E5%8A%A0%E5%AF%86/</guid>
-      <pubDate>Tue, 01 Sep 2020 14:42:54 GMT</pubDate>
-      
-      <description>加密博客测试</description>
-      
-      
-      
-      <content:encoded><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">输入密码，查看文章</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="e2809a5ffb0b106c411a24e20f24c34577c364c95df37c8cc865813250a600a8">0c82eceb360c5039096dbc0bb4eecdff</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content:encoded>
-      
-      
-      <category domain="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/">测试</category>
-      
-      
-      <category domain="http://yoursite.com/tags/%E5%8A%A0%E5%AF%86/">加密</category>
-      
-      
-      <comments>http://yoursite.com/2020/09/01/%E5%8A%A0%E5%AF%86/#disqus_thread</comments>
       
     </item>
     

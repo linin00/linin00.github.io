@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</loc>
-    <lastmod>2020-09-13</lastmod>
+    <loc>http://yoursite.com/2020/09/30/L-ink-card/</loc>
+    <lastmod>2020-09-30</lastmod>
   </url>
   <url>
     <loc>http://yoursite.com/2020/09/12/%E4%BF%A1%E6%81%AF%E8%BD%B0%E7%82%B8/</loc>
-    <lastmod>2020-09-12</lastmod>
+    <lastmod>2020-09-23</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite.com/2020/08/13/%E7%BD%AE%E9%A1%B6/</loc>
+    <lastmod>2020-09-13</lastmod>
   </url>
   <url>
     <loc>http://yoursite.com/2020/09/01/ffmpeg%E4%BD%BF%E7%94%A8/</loc>
