@@ -202,9 +202,9 @@
       <category domain="http://yoursite.com/categories/youtube-dl/">youtube-dl</category>
       
       
-      <category domain="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/">技术</category>
-      
       <category domain="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/">工具</category>
+      
+      <category domain="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/">技术</category>
       
       <category domain="http://yoursite.com/tags/youtube-dl/">youtube-dl</category>
       
