@@ -202,9 +202,9 @@
       <category domain="http://yoursite.com/categories/youtube-dl/">youtube-dl</category>
       
       
-      <category domain="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/">工具</category>
-      
       <category domain="http://yoursite.com/tags/%E6%8A%80%E6%9C%AF/">技术</category>
+      
+      <category domain="http://yoursite.com/tags/%E5%B7%A5%E5%85%B7/">工具</category>
       
       <category domain="http://yoursite.com/tags/youtube-dl/">youtube-dl</category>
       
@@ -246,7 +246,7 @@
       
       
       
-      <content:encoded><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">密码呢?小老弟??😎</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="c3431274f6df54cce40880f1acb169bedfa00debf69794bd4c1923dc9f8b174c">8e02f4f3c79ac7f91c4b3fbdd8a1d30a</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content:encoded>
+      <content:encoded><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="" />    <label for="hbePass">Hey, password is required here.</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="c3431274f6df54cce40880f1acb169bedfa00debf69794bd4c1923dc9f8b174c">8e02f4f3c79ac7f91c4b3fbdd8a1d30a</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content:encoded>
       
       
       <category domain="http://yoursite.com/categories/%E6%B5%8B%E8%AF%95/">测试</category>
